@@ -1,13 +1,13 @@
 ---
 layout: default
 permalink: /study/
-paginate: 5
 ---
 
 {% include home-header.html %}
 
 <div class="posts">
   {% for post in paginator.posts %}
+  <p>{{post}}</p>
   <section class="post-entry">
     <h2 class="post-title">
       <a href="{{ post.url | relative_url }}">
