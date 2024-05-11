@@ -4,5 +4,3 @@ permalink: /project/
 type: project
 title: Project
 ---
-
-# My project
