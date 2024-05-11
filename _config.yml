@@ -1,8 +1,8 @@
 # Setup
-title: Not Pure Poole
-description: A simple, beautiful, and powerful Jekyll theme for blogs
-url: https://vszhub.github.io
-avatar: /avatar.jpeg
+title: Min Jea Jung
+description: Machine Learning Researcher
+url: https://adws2.github.io
+avatar: /adws2/assets/ruby.jpg
 paginate: 5
 permalink: pretty
 cover_image: /bg.jpeg
@@ -36,7 +36,7 @@ social:
   name: Songzi Vong
   links:
     - https://twitter.com/vszhub
-    - https://github.com/vszhub
+    - https://github.com/adws2
 google_site_verification: xxxxx
 lang: en
 
