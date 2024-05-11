@@ -4,7 +4,15 @@ layout: default
 
 {% include home-header.html %}
 
-<div class="posts">
+
+<div id="about-content">
+  {% capture about_content %}
+    {% include_relative about.md %}
+  {% endcapture %}
+  {{ about_content | markdownify }}
+</div>
+
+<!-- <div class="posts">
   {% for post in paginator.posts %}
   <section class="post-entry">
     <h2 class="post-title">
@@ -42,4 +50,4 @@ layout: default
   {% else %}
     <span class="pagination-item newer">Newer</span>
   {% endif %}
-</div>
+</div> -->
