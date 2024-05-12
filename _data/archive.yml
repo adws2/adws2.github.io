@@ -1,3 +1,6 @@
+- type: aboutme
+  title: About Me
+  url: /
 - type: study
   title: Study
   url: /study/
