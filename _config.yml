@@ -62,4 +62,4 @@ author:
 collections:
   studies:
     output: true
-    permalink: /adws2/:path
+    permalink: /adws2/studies/
