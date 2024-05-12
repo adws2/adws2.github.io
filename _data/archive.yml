@@ -1,6 +1,6 @@
-- type: aboutme
+- type: about
   title: About Me
-  url: /
+  url: /About
 - type: study
   title: Study
   url: /study/

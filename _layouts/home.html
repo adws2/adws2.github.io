@@ -4,12 +4,12 @@ layout: default
 
 {% include home-header.html %}
 
-<!-- <div id="about-content">
+<div id="about-content">
   {% capture about_content %}
     {% include_relative about.md %}
   {% endcapture %}
   {{ about_content | markdownify }}
-</div> -->
+</div>
 
 <div class="posts">
   {% for post in paginator.posts %}
