@@ -2,11 +2,10 @@
 title: Min Jea Jung
 description: Machine Learning Researcher
 url: https://adws2.github.io
-avatar: /adws2/assets/ruby.jpg
+avatar: /adws2/assets/ruby2.jpg
 paginate: 5
-paginate_path: "/study/page:num/"
 permalink: pretty
-cover_image: /bg.jpeg
+cover_image: /adws2/assets/bg.jpeg
 
 # Gems
 plugins:
