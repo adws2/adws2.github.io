@@ -5,7 +5,7 @@ url: https://adws2.github.io
 avatar: /adws2/assets/ruby2.jpg
 paginate: 5
 permalink: pretty
-cover_image: /adws2/assets/bg.jpeg
+cover_image: /adws2/assets/bg.jpg
 
 # Gems
 plugins:
