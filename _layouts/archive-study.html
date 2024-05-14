@@ -8,6 +8,11 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
+<!-- 검색 필드 추가 -->
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="Search studies..." onkeyup="searchPosts()">
+</div>
+
 <div class="posts-grid">
   {% assign sorted_posts = site.studies | sort: 'date' | reverse %}
   {% for post in sorted_posts limit: paginator.per_page offset: paginator.offset %}
@@ -52,3 +57,24 @@ layout: default
     {% endfor %}
   </div>
 </div>
+
+<script>
+  function searchPosts() {
+    var input, filter, posts, title, i, txtValue;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    posts = document.getElementById("postsGrid").getElementsByClassName("post-card");
+  
+    for (i = 0; i < posts.length; i++) {
+      title = posts[i].getElementsByTagName("h2")[0];
+      if (title) {
+        txtValue = title.textContent || title.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          posts[i].style.display = "";
+        } else {
+          posts[i].style.display = "none";
+        }
+      }       
+    }
+  }
+  </script>
