@@ -77,4 +77,11 @@ layout: default
       }       
     }
   }
-  </script>
+</script>
+
+<script>
+  var password = prompt('비밀번호를 입력하세요:');
+  if (password !== '1234') {
+    document.body.innerHTML = '접근 권한이 없습니다.';
+  }
+</script>
