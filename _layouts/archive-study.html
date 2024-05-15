@@ -8,10 +8,10 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
-<!-- 검색 필드 추가 -->
-<div class="search-box">
+<!-- 검색 필드 추가, 동적 기능 -->
+<!-- <div class="search-box">
   <input type="text" id="searchInput" placeholder="Search studies..." onkeyup="searchPosts()">
-</div>
+</div> -->
 
 <div class="posts-grid">
   {% assign sorted_posts = site.studies | sort: 'date' | reverse %}
@@ -35,7 +35,8 @@ layout: default
   {% endfor %}
 </div>
 
-<div class="pagination">
+<!--동적 기능-->
+<!-- <div class="pagination">
   {% if paginator.next_page %}
     <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
   {% else %}
@@ -47,6 +48,7 @@ layout: default
     <span class="pagination-item newer">Newer</span>
   {% endif %}
 
+  
   <div class="page-numbers">
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
@@ -56,9 +58,13 @@ layout: default
       {% endif %}
     {% endfor %}
   </div>
-</div>
+</div> -->
 
-<script>
+
+
+<!--동적 기능(깃헙 페이지에서는 작동 X)-->
+
+<!-- <script>
   function searchPosts() {
     var input, filter, posts, title, i, txtValue;
     input = document.getElementById("searchInput");
@@ -103,7 +109,7 @@ layout: default
     var searchInput = document.getElementById("searchInput");
     searchInput.addEventListener('keyup', searchPosts);
   });
-</script>
+</script> -->
 
 <!-- <script>
   var password = prompt('비밀번호를 입력하세요:');
