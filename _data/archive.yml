@@ -16,9 +16,9 @@
 # - type: categories
 #   title: Categories
 #   url: /categories/
-# - type: tags
-#   title: Tags
-#   url: /tags/
+- type: tags
+  title: Tags
+  url: /tags/
 - type: visualization
   title: Visualization
   url: /visualization/

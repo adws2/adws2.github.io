@@ -10,8 +10,7 @@ layout: default
 {%- if page.type == 'categories' -%}
   {%- assign taxonomies = site.categories -%}
 {%- elsif page.type == 'tags' -%}
-  {%- assign study_tags = site.studies | map: 'tags' | flatten | uniq -%}
-  {%- assign taxonomies = site.tags | merge: study_tags -%}
+  {%- assign taxonomies = site.studies | map: 'tags' | flatten | uniq -%}
 {%- else -%}
   {%- assign taxonomies = none -%}
 {%- endif -%}
