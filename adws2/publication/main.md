@@ -1,4 +1,9 @@
 
+#### PMoE: Progressive Mixture of Experts with Asymmetric Transformer for Continual Learning  (<U>Min Jae Jung</U>, Joohee Kim)
+
+(under review)
+
+---
 #### Re-Scoring Using Image-Language Similarity for Few-Shot Object Detection  (<U>Min Jae Jung</U>, Seung Dae Han, Joohee Kim)
 
 CVIU, 2024
